@@ -80,7 +80,7 @@ export default function ExperienceDetailPage({
                   key={idx}
                   className="text-base leading-relaxed flex items-start gap-3"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   {desc}
                 </li>
               ))}
@@ -104,7 +104,7 @@ export default function ExperienceDetailPage({
                   key={idx}
                   className="text-base leading-relaxed flex items-start gap-3"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   {achievement}
                 </li>
               ))}
@@ -152,7 +152,7 @@ export default function ExperienceDetailPage({
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
                     {experience.logo && (
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg border-2 border-border overflow-hidden bg-white shrink-0">
                         <Image
                           src={experience.logo}
                           alt={experience.company}
