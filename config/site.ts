@@ -4,7 +4,7 @@ export const siteConfig = {
   designation: "Frontend Engineer",
   username: "mdnhs",
   description:
-    "Nazmul H. Sourab's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
+    "🚀 Software Engineer (Frontend Focused) | Proficient with JavaScript (ES6+) | TypeScript | ReactJs | NextJs & other cutting-edge frontend technologies ✨",
   url: "https://www.nazmulhsourab.com",
   links: {
     twitter: "https://x.com/mdnhs_cse",
