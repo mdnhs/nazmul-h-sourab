@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-photo.png";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
+  title: `${pagesConfig.home.metadata.title} | ${siteConfig.designation}`,
   description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
   alternates: {
     canonical: siteConfig.url,
@@ -37,7 +37,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Full Stack Developer",
+    jobTitle: siteConfig.designation,
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
@@ -45,7 +45,7 @@ export default function IndexPage() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
+    name: "Next.js 16 Portfolio",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Web",
     offers: {
