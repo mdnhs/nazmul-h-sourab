@@ -18,10 +18,10 @@ interface ProjectPageProps {
   };
 }
 
-const githubUsername = "namanbarkiya";
+export default async function Project({ params }: ProjectPageProps) {
+  const { projectId } = await params;
 
-export default function Project({ params }: ProjectPageProps) {
-  let project = Projects.find((val) => val.id === params.projectId);
+  let project = Projects.find((val) => val?.id === projectId);
   if (!project) {
     redirect("/projects");
   }
@@ -108,7 +108,6 @@ export default function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
-        {/* {<project.descriptionComponent />} */}
         <ProjectDescription
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
