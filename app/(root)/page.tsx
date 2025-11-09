@@ -7,12 +7,12 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import ContributionCard from "@/components/contributions/contribution-card";
+import EducationsCard from "@/components/educations/educations-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { featuredContributions } from "@/config/contributions";
+import { featuredEducations } from "@/config/educations";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
@@ -107,10 +107,10 @@ export default function IndexPage() {
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"/Nazmul_Resume.pdf"}
+                href={"/resume"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label={`View ${siteConfig.authorName}'s Resume`}
               >
                 <Icons.download className="w-4 h-4 mr-2" /> Resume
               </Link>
@@ -125,7 +125,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label={`Contact ${siteConfig.authorName}`}
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -211,28 +211,28 @@ export default function IndexPage() {
       <AnimatedSection
         direction="down"
         className="container space-y-6 bg-muted py-10 my-14"
-        id="contributions"
+        id="Educations"
       >
         <div className="mx-auto flex max-w-232 flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.contributions.title}
+            {pagesConfig.Educations.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.contributions.description}
+            {pagesConfig.Educations.description}
           </AnimatedText>
         </div>
         <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
+          <EducationsCard Educations={featuredEducations} />
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
+          <Link href="/educations">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>

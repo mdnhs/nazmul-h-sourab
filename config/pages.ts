@@ -1,4 +1,5 @@
 import { ValidPages } from "./constants";
+import { siteConfig } from "./site";
 
 type PagesConfig = {
   [key in ValidPages]: {
@@ -8,7 +9,6 @@ type PagesConfig = {
       title: string;
       description: string;
     };
-    // featuredDescription: string;
   };
 };
 
@@ -18,58 +18,60 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      description: `${siteConfig.authorName} — Frontend Developer specializing in React, Next.js, TypeScript, and Tailwind CSS.`,
     },
   },
   skills: {
     title: "Skills",
-    description: "Key skills that define my professional identity.",
+    description:
+      "A collection of frontend technologies, frameworks, and tools I work with.",
     metadata: {
       title: "Skills",
-      description:
-        "Naman Barkiya's key skills that define his professional identity.",
+      description: `${siteConfig.authorName}’s professional skill set including React, Next.js, TypeScript, Tailwind CSS, Redux, and REST API.`,
     },
   },
   projects: {
     title: "Projects",
-    description: "Showcasing impactful projects and technical achievements.",
+    description:
+      "Showcasing impactful web projects and real-world applications I’ve built.",
     metadata: {
       title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      description: `${siteConfig.authorName}’s notable projects including US-Bangla Airlines, FirstTrip, and TechnoNext Software websites built with Next.js and TypeScript.`,
     },
   },
   contact: {
     title: "Contact",
-    description: "Let's connect and explore collaborations.",
+    description: "Let’s connect and collaborate on something great.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
+      description: `Get in touch with ${siteConfig.authorName} — Frontend Developer from Dhaka, Bangladesh.`,
     },
   },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+  Educations: {
+    title: "Educations",
+    description:
+      "Academic background and continuous learning that shaped my technical foundation.",
     metadata: {
-      title: "Contributions",
-      description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+      title: "Educations",
+      description: `${siteConfig.authorName}’s academic journey — BSc in Computer Science & Engineering, Diploma in Computer Engineering, and SSC in Science.`,
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description:
+      "Explore my professional background, technical skills, and experience timeline.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
+      description: `${siteConfig.authorName}’s professional resume — Frontend Developer with 2.5 years of experience in React, Next.js, and TypeScript.`,
     },
   },
   experience: {
     title: "Experience",
-    description: "Professional journey and career timeline.",
+    description:
+      "My professional journey and milestones in software development.",
     metadata: {
       title: "Experience",
-      description:
-        "Naman Barkiya's professional journey and experience timeline.",
+      description: `${siteConfig.authorName}’s experience as a Frontend Developer at TechnoNext Software Ltd — building modern web applications using React, Next.js, and TypeScript.`,
     },
   },
 };

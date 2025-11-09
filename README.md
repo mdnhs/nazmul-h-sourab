@@ -76,7 +76,7 @@ The portfolio is designed to be easily customizable:
 2. **Skills**: Add your skills in `config/skills.ts`
 3. **Projects**: Add your technical projects in `config/projects.ts`
 4. **Experience**: Customize your professional experience in `config/experience.ts`
-5. **Contributions**: Showcase your contributions in `config/contributions.ts`
+5. **Educations**: Showcase your Educations in `config/Educations.ts`
 6. **Colors & Theme**: Modify the theme in `tailwind.config.js`
 
 ## 🌟 Features In Detail

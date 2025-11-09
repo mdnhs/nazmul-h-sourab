@@ -6,7 +6,7 @@ This is the folder structure of the whole application
 │ ├── (root)
 │ │ ├── contact
 │ │ │ └── page.tsx
-│ │ ├── contributions
+│ │ ├── Educations
 │ │ │ └── page.tsx
 │ │ ├── experience
 │ │ │ ├── [expId]
@@ -50,7 +50,7 @@ This is the folder structure of the whole application
 │ │ └── theme-provider.tsx
 │ ├── contact
 │ │ └── github-redirect-card.tsx
-│ ├── contributions
+│ ├── Educations
 │ │ └── contribution-card.tsx
 │ ├── experience
 │ │ ├── experience-card.tsx
@@ -87,7 +87,7 @@ This is the folder structure of the whole application
 ├── components.json
 ├── config
 │ ├── constants.ts
-│ ├── contributions.ts
+│ ├── Educations.ts
 │ ├── experience.ts
 │ ├── pages.ts
 │ ├── projects.ts

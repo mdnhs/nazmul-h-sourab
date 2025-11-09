@@ -12,7 +12,7 @@ The website's main navigation menu is accessible from all pages and includes the
 2. **Skills**: [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
 3. **Projects**: [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
 4. **Experience**: [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
-5. **Contributions**: [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
+5. **Educations**: [https://nbarkiya.xyz/Educations](https://nbarkiya.xyz/Educations)
 6. **Contact**: [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
 
 ---
@@ -29,7 +29,7 @@ The website's main navigation menu is accessible from all pages and includes the
 - **Skills Overview**: Highlights key skills with a prompt to view all skills.
 - **Projects Highlights**: Summarizes notable technical projects with links to detailed descriptions.
 - **Experience Highlights**: Summarizes professional work experience with links to detailed descriptions.
-- **Contributions Summary**: Lists recent open-source contributions with links for more information.
+- **Educations Summary**: Lists recent open-source Educations with links for more information.
 
 ### 2. Skills
 
@@ -55,13 +55,13 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Professional Experience**: Details work experience with company information, roles, and achievements.
 
-### 5. Contributions
+### 5. Educations
 
-**URL:** [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
+**URL:** [https://nbarkiya.xyz/Educations](https://nbarkiya.xyz/Educations)
 
 **Sections:**
 
-- **Open-Source Contributions**: Lists contributions with descriptions and links to the respective repositories.
+- **Open-Source Educations**: Lists Educations with descriptions and links to the respective repositories.
 
 ### 6. Contact
 
