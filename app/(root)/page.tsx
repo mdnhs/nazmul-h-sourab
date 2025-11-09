@@ -104,7 +104,7 @@ export default function IndexPage() {
             </p>
           </div>
 
-          <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
+          <div className="flex mt-10 items-center justify-center flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
                 href={"/resume"}

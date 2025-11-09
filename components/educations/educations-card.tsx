@@ -17,7 +17,7 @@ export default function EducationsCard({ Educations }: EducationsCardProps) {
               size={35}
               className="absolute bottom-3 right-3 border bg-background rounded-full p-2 cursor-pointer text-muted-foreground "
             />
-            <div className="flex h-[170px] flex-col justify-between rounded-md p-6 sm:h-fit gap-2">
+            <div className="flex flex-col justify-between rounded-md p-6 h-fit gap-2">
               <div className="flex flex-row justify-between">
                 <h3 className="font-bold flex space-x-2 items-start">
                   <Icons.gitRepoIcon size={20} />

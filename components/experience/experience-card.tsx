@@ -50,20 +50,22 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
                 {experience.position}
               </h3>
               {experience.companyUrl && (
-                <a
+                <Link
                   href={experience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors shrink-0 mt-0.5 sm:mt-0"
                 >
                   <Icons.externalLink className="w-4 h-4" />
-                </a>
+                </Link>
               )}
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm text-muted-foreground">
+            <div className="flex flex-col gap-1 sm:gap-2 text-sm text-muted-foreground">
               <span className="font-medium">{experience.company}</span>
-              <span className="hidden sm:inline">•</span>
-              <span>{experience.location}</span>
+              <div>
+                <span className="hidden sm:inline pr-1">•</span>
+                <span>{experience.location}</span>
+              </div>
             </div>
             <div className="flex items-center gap-2">
               <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
