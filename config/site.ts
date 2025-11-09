@@ -9,6 +9,8 @@ export const siteConfig = {
   links: {
     twitter: "https://x.com/mdnhs_cse",
     github: "https://github.com/mdnhs",
+    linkedIn: "https://linkedin.com/in/mdnhs",
+    mail: "mailto:mdnhs@example.com",
   },
   ogImage: "/profile-photo.png",
   iconIco: "/profile-photo.png",

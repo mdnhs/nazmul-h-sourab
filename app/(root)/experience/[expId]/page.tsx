@@ -55,10 +55,11 @@ export async function generateMetadata({
   };
 }
 
-export default function ExperienceDetailPage({
+export default async function ExperienceDetailPage({
   params,
 }: ExperienceDetailPageProps) {
-  const experience = experiences.find((c) => c.id === params.expId);
+  const { expId } = await params;
+  const experience = experiences.find((c) => c.id === expId);
 
   if (!experience) {
     redirect("/experience");

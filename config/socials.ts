@@ -1,4 +1,5 @@
 import { Icons } from "@/components/common/icons";
+import { siteConfig } from "./site";
 
 interface SocialInterface {
   name: string;
@@ -10,26 +11,26 @@ interface SocialInterface {
 export const SocialLinks: SocialInterface[] = [
   {
     name: "Github",
-    username: "@namanbarkiya",
+    username: siteConfig.links.github.replace("https://github.com/", ""),
     icon: Icons.gitHub,
-    link: "https://github.com/namanbarkiya",
+    link: siteConfig.links.github,
   },
   {
     name: "LinkedIn",
-    username: "Naman Barkiya",
+    username: siteConfig.links.linkedIn.replace("https://linkedin.com/in/", ""),
     icon: Icons.linkedin,
-    link: "https://www.linkedin.com/in/namanbarkiya",
+    link: siteConfig.links.linkedIn,
   },
   {
     name: "Twitter",
-    username: "@namanbarkiya",
+    username: siteConfig.links.twitter.replace("https://twitter.com/", ""),
     icon: Icons.twitter,
-    link: "https://twitter.com/namanbarkiya",
+    link: siteConfig.links.twitter,
   },
   {
     name: "Gmail",
-    username: "naman.barkiya02",
+    username: siteConfig.links.mail.replace("mailto:", ""),
     icon: Icons.gmail,
-    link: "mailto:naman.barkiya02@gmail.com",
+    link: siteConfig.links.mail,
   },
 ];
