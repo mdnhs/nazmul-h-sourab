@@ -17,7 +17,7 @@ export interface ExperienceInterface {
 export const experiences: ExperienceInterface[] = [
   {
     id: "tn",
-    position: "Software Engineer (Frontend Developer)",
+    position: "Software Engineer",
     company: "TechnoNext Software Ltd",
     location: "Dhaka, Bangladesh",
     startDate: new Date("2025-07-01"),
@@ -52,7 +52,7 @@ export const experiences: ExperienceInterface[] = [
   },
   {
     id: "tn-jr",
-    position: "Jr. Software Engineer (Frontend)",
+    position: "Jr. Software Engineer",
     company: "TechnoNext Software Ltd",
     location: "Dhaka, Bangladesh",
     startDate: new Date("2022-10-16"),
