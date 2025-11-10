@@ -67,6 +67,7 @@ export type ValidSkills =
 
 export type ValidCategory =
   | "Full Stack"
+  | "Web Development"
   | "Frontend"
   | "Backend"
   | "UI/UX"

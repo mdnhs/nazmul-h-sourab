@@ -10,7 +10,6 @@ import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
 
 interface ProjectPageProps {
   params: {
@@ -71,8 +70,8 @@ export default async function Project({ params }: ProjectPageProps) {
             className="flex items-center space-x-2 text-sm"
           >
             <Image
-              src={profileImg}
-              alt={"naman"}
+              src={siteConfig.ogImage}
+              alt={siteConfig.authorName}
               width={42}
               height={42}
               className="rounded-full bg-background"

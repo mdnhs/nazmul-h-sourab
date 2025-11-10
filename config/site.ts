@@ -1,10 +1,12 @@
 export const siteConfig = {
-  name: "Nazmul H. Sourab | Frontend Engineer",
+  name: "Nazmul H. Sourab | Software Engineer",
   authorName: "Nazmul H. Sourab",
-  designation: "Frontend Engineer",
+  designation: "Software Engineer",
+  companyName: "TechnoNext Software Ltd",
+  companyURL: "https://technonext.com",
   username: "mdnhs",
   description:
-    "🚀 Frontend Engineer | Experienced in React.js, Next.js, TypeScript & Tailwind CSS | Passionate about building performant, scalable, and modern web applications ✨",
+    "🚀 Software Engineer | Experienced in React.js, Next.js, TypeScript & Tailwind CSS | Passionate about building performant, scalable, and modern web applications ✨",
   url: "https://www.nazmulhsourab.com",
   links: {
     twitter: "https://x.com/mdnhs_cse",
@@ -20,6 +22,7 @@ export const siteConfig = {
     "Nazmul Hasan Sourab",
     "Nazmul Hasan",
     "Frontend Engineer",
+    "Software Engineer",
     "Frontend Developer",
     "React Developer",
     "Next.js Developer",
