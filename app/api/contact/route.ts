@@ -1,30 +1,40 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const formLink = process.env.GOOGLE_FORM_LINK;
-  if (!formLink) {
-    return new NextResponse("Please configure the env variables", {
-      status: 500,
-    });
-  }
-
-  // configure this according to your google form
+  const formBaseLink = process.env.GOOGLE_FORM_LINK;
   const fieldIdName = process.env.GOOGLE_FORM_FIELD_ID_NAME;
   const fieldIdEmail = process.env.GOOGLE_FORM_FIELD_ID_EMAIL;
   const fieldIdMessage = process.env.GOOGLE_FORM_FIELD_ID_MESSAGE;
   const fieldIdSocial = process.env.GOOGLE_FORM_FIELD_ID_SOCIAL;
 
+  if (!formBaseLink) {
+    return new NextResponse("Missing Google Form configuration", {
+      status: 500,
+    });
+  }
+
   try {
     const body = await req.json();
-    const { name, message, social, email } = body;
+    const { name, email, message, social } = body;
 
-    const res = await fetch(
-      `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
-    );
+    const formData = new URLSearchParams();
+    formData.append(`entry.${fieldIdName}`, name);
+    formData.append(`entry.${fieldIdEmail}`, email);
+    formData.append(`entry.${fieldIdMessage}`, message);
+    formData.append(`entry.${fieldIdSocial}`, social || "");
 
-    return NextResponse.json("Success!");
+    const res = await fetch(`${formBaseLink}/formResponse`, {
+      method: "POST",
+      body: formData,
+    });
+
+    if (res.ok || res.status === 200) {
+      return NextResponse.json("Success! Form submitted.", { status: 200 });
+    } else {
+      return new NextResponse("Failed to submit form.", { status: 400 });
+    }
   } catch (error) {
-    console.log(error);
-    return new NextResponse("Internal error", { status: 500 });
+    console.error("Form submission error:", error);
+    return new NextResponse("Internal server error.", { status: 500 });
   }
 }

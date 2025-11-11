@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -17,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useModalStore } from "@/hooks/use-modal-store";
+import SuccessAnimation from "../contact/success-animation";
 
 const formSchema = z.object({
   name: z.string().min(3, {
@@ -32,8 +32,6 @@ const formSchema = z.object({
 export function ContactForm() {
   const storeModal = useModalStore();
 
-  // const [open, setOpen] = useState(false);
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,7 +42,6 @@ export function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const response = await fetch("/api/contact", {
@@ -59,10 +56,10 @@ export function ContactForm() {
 
       if (response.status === 200) {
         storeModal.onOpen({
-          title: "Thankyou!",
+          title: "Thank you!",
           description:
             "Your message has been received! I appreciate your contact and will get back to you shortly.",
-          icon: Icons.successAnimated,
+          icon: SuccessAnimation,
         });
       }
     } catch (err) {
@@ -85,9 +82,6 @@ export function ContactForm() {
               <FormControl>
                 <Input placeholder="Enter your name" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
@@ -127,9 +121,6 @@ export function ContactForm() {
               <FormControl>
                 <Input placeholder="Link for social account" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
