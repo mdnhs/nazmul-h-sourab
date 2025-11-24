@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import * as React from "react";
@@ -22,7 +22,7 @@ const fontNavHeading = localFont({
 });
 
 // Animation variants for the navigation items
-const navItemVariants = {
+const navItemVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
   visible: (i: number) => ({
     opacity: 1,
