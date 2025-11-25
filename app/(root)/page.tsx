@@ -11,6 +11,7 @@ import EducationsCard from "@/components/educations/educations-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredEducations } from "@/config/educations";
 import { experiences } from "@/config/experience";
@@ -73,77 +74,79 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-5xl flex-col items-center gap-4 text-center -mt-20">
-          <Image
-            src={profileImg}
-            height={100}
-            width={100}
-            sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt={`${siteConfig.authorName} - ${siteConfig.designation} Portfolio`}
-            priority
-          />
-          <AnimatedText
-            as="h1"
-            delay={0.2}
-            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
-          >
-            {siteConfig.authorName}
-          </AnimatedText>
-          <AnimatedText
-            as="h3"
-            delay={0.4}
-            className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
-          >
-            {siteConfig.designation} <br />
-            <Link
-              href={siteConfig.companyURL}
-              className="font-normal! text-base"
-              target="_blank"
-              rel="noopener noreferrer"
+      <BackgroundBeamsWithCollision className="h-[calc(100vh-6rem)]">
+        <section className="space-y-6 flex items-center">
+          <div className="container flex max-w-5xl flex-col items-center gap-4 text-center">
+            <Image
+              src={profileImg}
+              height={100}
+              width={100}
+              sizes="100vw"
+              className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
+              alt={`${siteConfig.authorName} - ${siteConfig.designation} Portfolio`}
+              priority
+            />
+            <AnimatedText
+              as="h1"
+              delay={0.2}
+              className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
             >
-              @{siteConfig.companyName}
-            </Link>
-          </AnimatedText>
-          <div className="mt-4 max-w-2xl text-center">
-            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              {siteConfig.description}
-            </p>
-          </div>
-
-          <div className="flex mt-10 items-center justify-center flex-row sm:space-x-4 gap-3">
-            <AnimatedText delay={0.6}>
+              {siteConfig.authorName}
+            </AnimatedText>
+            <AnimatedText
+              as="h3"
+              delay={0.4}
+              className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
+            >
+              {siteConfig.designation} <br />
               <Link
-                href={"/resume"}
+                href={siteConfig.companyURL}
+                className="font-normal! text-base"
                 target="_blank"
-                className={cn(buttonVariants({ size: "lg" }))}
-                aria-label={`View ${siteConfig.authorName}'s Resume`}
+                rel="noopener noreferrer"
               >
-                <Icons.download className="w-4 h-4 mr-2" /> Resume
+                @{siteConfig.companyName}
               </Link>
             </AnimatedText>
-            <AnimatedText delay={0.8}>
-              <Link
-                href={"/contact"}
-                rel="noreferrer"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "lg",
-                  })
-                )}
-                aria-label={`Contact ${siteConfig.authorName}`}
-              >
-                <Icons.contact className="w-4 h-4 mr-2" /> Contact
-              </Link>
+            <div className="mt-4 max-w-2xl text-center">
+              <p className="leading-normal text-muted-foreground text-sm sm:text-base">
+                {siteConfig.description}
+              </p>
+            </div>
+
+            <div className="flex mt-10 items-center justify-center flex-row sm:space-x-4 gap-3">
+              <AnimatedText delay={0.6}>
+                <Link
+                  href={"/resume"}
+                  target="_blank"
+                  className={cn(buttonVariants({ size: "lg" }))}
+                  aria-label={`View ${siteConfig.authorName}'s Resume`}
+                >
+                  <Icons.download className="w-4 h-4 mr-2" /> Resume
+                </Link>
+              </AnimatedText>
+              <AnimatedText delay={0.8}>
+                <Link
+                  href={"/contact"}
+                  rel="noreferrer"
+                  className={cn(
+                    buttonVariants({
+                      variant: "outline",
+                      size: "lg",
+                    })
+                  )}
+                  aria-label={`Contact ${siteConfig.authorName}`}
+                >
+                  <Icons.contact className="w-4 h-4 mr-2" /> Contact
+                </Link>
+              </AnimatedText>
+            </div>
+            <AnimatedText delay={1.2}>
+              <Icons.chevronDown className="h-6 w-6 mt-10" />
             </AnimatedText>
           </div>
-          <AnimatedText delay={1.2}>
-            <Icons.chevronDown className="h-6 w-6 mt-10" />
-          </AnimatedText>
-        </div>
-      </section>
+        </section>
+      </BackgroundBeamsWithCollision>
 
       <AnimatedSection
         direction="right"
