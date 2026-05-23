@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f public/experience/agentprod-logo.png public/experience/builtdesign-logo.png public/logo.png public/next.svg public/profile-img.jpg public/vercel.svg assets/fonts/CalSans-SemiBold.ttf assets/fonts/CalSans-SemiBold.woff assets/fonts/Inter-Bold.ttf assets/fonts/Inter-Regular.ttf)",
+      "Bash(rm -rf public/projects/apex public/projects/builtdesign public/projects/builtdesign-blogs public/projects/card public/projects/cirql public/projects/hindi-keyboard public/projects/supercareer public/projects/superquotes)"
+    ]
+  }
+}
