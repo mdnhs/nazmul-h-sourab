@@ -23,7 +23,7 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2025-07-01"),
     endDate: "Present",
     description: [
-      "Building, maintaining, and optimizing large-scale web applications with Next.js, React, and TypeScript, and cross-platform mobile applications with React Native, Expo, and Flutter.",
+      "Frontend-focused engineering: building, maintaining, and optimizing large-scale web applications with Next.js, React, and TypeScript, and cross-platform mobile applications with React Native, Expo, and Flutter.",
       "Collaborating closely with backend and design teams to deliver user-centric, responsive interfaces.",
       "Implementing authentication, routing, and API integrations with a focus on security and scalability.",
       "Enhancing UI performance through code-splitting, lazy loading, and advanced caching strategies.",

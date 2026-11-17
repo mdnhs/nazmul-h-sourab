@@ -6,7 +6,7 @@ export const siteConfig = {
   companyURL: "https://technonext.com",
   username: "mdnhs",
   description:
-    "🚀 Software Engineer | Experienced in React.js, Next.js, React Native, Expo, Flutter, Firebase, TypeScript & Tailwind CSS | Passionate about building performant, scalable, and modern web & mobile applications ✨",
+    "🚀 Frontend-focused Software Engineer | Experienced in React.js, Next.js, React Native, Expo, Flutter, Firebase, TypeScript & Tailwind CSS | Passionate about building performant, scalable, and modern web & mobile applications ✨",
   url: "https://www.nazmulhsourab.com",
   links: {
     twitter: "https://x.com/mdnhs_cse",

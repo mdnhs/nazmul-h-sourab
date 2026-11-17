@@ -18,7 +18,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: `${siteConfig.authorName} — Software Engineer specializing in React, Next.js, React Native, Expo, Flutter, TypeScript, and Tailwind CSS.`,
+      description: `${siteConfig.authorName} — Frontend-focused Software Engineer specializing in React, Next.js, React Native, Expo, Flutter, TypeScript, and Tailwind CSS.`,
     },
   },
   skills: {
@@ -62,7 +62,7 @@ export const pagesConfig: PagesConfig = {
       "Explore my professional background, technical skills, and experience timeline.",
     metadata: {
       title: "Resume",
-      description: `${siteConfig.authorName}’s professional resume — Software Engineer with 2.5 years of experience building web and mobile apps with React, Next.js, React Native, Expo, and TypeScript.`,
+      description: `${siteConfig.authorName}’s professional resume — Frontend-focused Software Engineer with 2.5 years of experience building web and mobile apps with React, Next.js, React Native, Expo, and TypeScript.`,
     },
   },
   experience: {
@@ -71,7 +71,7 @@ export const pagesConfig: PagesConfig = {
       "My professional journey and milestones in software development.",
     metadata: {
       title: "Experience",
-      description: `${siteConfig.authorName}’s experience as a Software Engineer at TechnoNext Software Ltd — building web and mobile applications using React, Next.js, React Native, Expo, Flutter, and TypeScript.`,
+      description: `${siteConfig.authorName}’s experience as a Frontend-focused Software Engineer at TechnoNext Software Ltd — building web and mobile applications using React, Next.js, React Native, Expo, Flutter, and TypeScript.`,
     },
   },
 };
