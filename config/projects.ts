@@ -88,7 +88,7 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "As a Frontend Developer at TechnoNext Software Ltd., I contributed to the official website of US-Bangla Airlines — one of Bangladesh’s largest private airlines. The project aimed to modernize the airline’s online presence and provide travelers with a fast, responsive, and accessible experience.",
+        "As a Software Engineer at TechnoNext Software Ltd., I contributed to the official website of US-Bangla Airlines — one of Bangladesh’s largest private airlines. The project aimed to modernize the airline’s online presence and provide travelers with a fast, responsive, and accessible experience.",
         "My primary focus was on crafting a modular frontend architecture using Next.js, TypeScript, and Tailwind CSS. I implemented key UI components such as dynamic flight listings, promotions, and booking flows, ensuring optimal performance and consistency across devices.",
         "Working closely with backend engineers and designers, I integrated REST APIs for live flight data and content updates. I also ensured SEO optimization, accessibility, and efficient image handling using Next.js' server-side rendering capabilities.",
         "The result was a high-performing, scalable, and visually engaging airline website that improved user engagement and reduced loading times significantly.",
@@ -155,7 +155,7 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "At TechnoNext Software Ltd., I worked as a Frontend Developer on Foodi — a next-generation online food ordering platform connecting restaurants with customers across Bangladesh.",
+        "At TechnoNext Software Ltd., I worked as a Software Engineer on Foodi — a next-generation online food ordering platform connecting restaurants with customers across Bangladesh.",
         "My primary responsibility was building and optimizing the platform’s frontend using Next.js and TypeScript. I implemented key modules including restaurant listings, food item details, user authentication, and the checkout process. Each module was designed with responsiveness, scalability, and accessibility in mind.",
         "I also collaborated with backend developers to integrate REST APIs and built an admin-friendly CMS interface that enabled the Foodi team to manage restaurant data, menu updates, and promotional content dynamically through https://cms-stage.foodibd.com/.",
         "This project strengthened my experience in building real-world, data-driven web applications with a focus on smooth UX and maintainable architecture.",
@@ -230,7 +230,7 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "I contributed as a Frontend Developer for Cartup — a rapidly growing homegrown e-commerce brand in Bangladesh, backed by the U.S.-Bangla group. :contentReference[oaicite:1]{index=1} The platform’s objective was to deliver a modern, high-performance online shopping experience to Bangladeshi consumers, combining curated product selection with fast delivery and reliable logistics.",
+        "I contributed as a Software Engineer for Cartup — a rapidly growing homegrown e-commerce brand in Bangladesh, backed by the U.S.-Bangla group. :contentReference[oaicite:1]{index=1} The platform’s objective was to deliver a modern, high-performance online shopping experience to Bangladeshi consumers, combining curated product selection with fast delivery and reliable logistics.",
         "My role focused on building the frontend using Next.js and React with TypeScript, designing modular components, optimizing load times, and ensuring responsive layouts across devices. I worked closely with product, UX and backend teams to integrate REST APIs, manage state with Redux, and deploy performance optimizations.",
         "Key parts of the project included the featured deals homepage, advanced filtering and listing pages, a seamless checkout experience, and the user account/dashboard sections. Each module was tuned for usability, accessibility and mobile-first behaviour. The stack was designed to scale with high traffic and support a wide range of product categories — electronics, fashion, home & living, groceries and more. :contentReference[oaicite:2]{index=2}",
       ],
@@ -307,7 +307,7 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "As a Frontend Developer for FirstTrip, I was responsible for crafting the user-facing web platform of a new travel-tech offering in Bangladesh that handles flights, hotels, visa services and holiday packages. FirstTrip is positioned as a next-generation OTA backed by the US-Bangla group. :contentReference[oaicite:1]{index=1}",
+        "As a Software Engineer for FirstTrip, I was responsible for crafting the user-facing web platform of a new travel-tech offering in Bangladesh that handles flights, hotels, visa services and holiday packages. FirstTrip is positioned as a next-generation OTA backed by the US-Bangla group. :contentReference[oaicite:1]{index=1}",
         "My core focus was on building a scalable and high-performance frontend using Next.js, TypeScript and Tailwind CSS, while working closely with design and backend teams. I developed reusable UI components, responsive layouts, search and filter functionalities for travel products, and integrated payment flows and authentication.",
         "I collaborated with backend engineers to consume REST APIs for booking modules, flight/hotel search and inventory management, ensuring clean data handling and smooth user experience across device types. The platform also launched new features like ‘Combo Flight’ to mix airlines for better bookings. :contentReference[oaicite:2]{index=2}",
         "This project sharpened my skills in performance optimisation, accessibility, frontend architecture and user-centric design. It resulted in a polished MVP launch that supports the company’s vision to expand rapidly in the Bangladeshi travel-tech space. :contentReference[oaicite:3]{index=3}",
