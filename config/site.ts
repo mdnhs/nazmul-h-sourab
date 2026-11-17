@@ -23,6 +23,7 @@ export const siteConfig = {
     "Nazmul Hasan",
     "Frontend Engineer",
     "Software Engineer",
+    "Web & Mobile App Developer",
     "Frontend Developer",
     "React Developer",
     "React Native Developer",

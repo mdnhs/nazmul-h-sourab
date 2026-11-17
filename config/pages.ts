@@ -44,7 +44,7 @@ export const pagesConfig: PagesConfig = {
     description: "Let’s connect and collaborate on something great.",
     metadata: {
       title: "Contact",
-      description: `Get in touch with ${siteConfig.authorName} — Frontend Developer from Dhaka, Bangladesh.`,
+      description: `Get in touch with ${siteConfig.authorName} — Software Engineer building web and mobile apps from Dhaka, Bangladesh.`,
     },
   },
   Educations: {
@@ -62,7 +62,7 @@ export const pagesConfig: PagesConfig = {
       "Explore my professional background, technical skills, and experience timeline.",
     metadata: {
       title: "Resume",
-      description: `${siteConfig.authorName}’s professional resume — Frontend Developer with 2.5 years of experience in React, Next.js, and TypeScript.`,
+      description: `${siteConfig.authorName}’s professional resume — Software Engineer with 2.5 years of experience building web and mobile apps with React, Next.js, React Native, Expo, and TypeScript.`,
     },
   },
   experience: {
@@ -71,7 +71,7 @@ export const pagesConfig: PagesConfig = {
       "My professional journey and milestones in software development.",
     metadata: {
       title: "Experience",
-      description: `${siteConfig.authorName}’s experience as a Frontend Developer at TechnoNext Software Ltd — building modern web applications using React, Next.js, and TypeScript.`,
+      description: `${siteConfig.authorName}’s experience as a Software Engineer at TechnoNext Software Ltd — building web and mobile applications using React, Next.js, React Native, Expo, Flutter, and TypeScript.`,
     },
   },
 };
