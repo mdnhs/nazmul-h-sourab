@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -12,8 +13,35 @@ import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     projectId: string;
+  }>;
+}
+
+export function generateStaticParams() {
+  return Projects.map((val) => ({
+    projectId: val.id,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: ProjectPageProps): Promise<Metadata> {
+  const { projectId } = await params;
+  const project = Projects.find((val) => val?.id === projectId);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+
+  return {
+    title: `${project.companyName} | Projects`,
+    description: project.descriptionDetails?.paragraphs?.[0] || "",
+    alternates: {
+      canonical: `${siteConfig.url}/projects/${projectId}`,
+    },
   };
 }
 

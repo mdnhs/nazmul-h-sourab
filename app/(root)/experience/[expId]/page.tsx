@@ -14,9 +14,15 @@ import { experiences } from "@/config/experience";
 import { siteConfig } from "@/config/site";
 
 interface ExperienceDetailPageProps {
-  params: {
+  params: Promise<{
     expId: string;
-  };
+  }>;
+}
+
+export function generateStaticParams() {
+  return experiences.map((val) => ({
+    expId: val.id,
+  }));
 }
 
 // Helper function to extract year from date
@@ -38,7 +44,8 @@ const getDurationText = (
 export async function generateMetadata({
   params,
 }: ExperienceDetailPageProps): Promise<Metadata> {
-  const experience = experiences.find((c) => c.id === params.expId);
+  const { expId } = await params;
+  const experience = experiences.find((c) => c.id === expId);
 
   if (!experience) {
     return {
@@ -50,7 +57,7 @@ export async function generateMetadata({
     title: `${experience.position} at ${experience.company} | Experience`,
     description: `Detailed information about my role as ${experience.position} at ${experience.company}.`,
     alternates: {
-      canonical: `${siteConfig.url}/experience/${params.expId}`,
+      canonical: `${siteConfig.url}/experience/${expId}`,
     },
   };
 }
