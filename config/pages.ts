@@ -62,7 +62,7 @@ export const pagesConfig: PagesConfig = {
       "Explore my professional background, technical skills, and experience timeline.",
     metadata: {
       title: "Resume",
-      description: `${siteConfig.authorName}’s professional resume — Frontend-focused Software Engineer with 2.5 years of experience building web and mobile apps with React, Next.js, React Native, Expo, and TypeScript.`,
+      description: `${siteConfig.authorName}’s professional resume — Frontend-focused Software Engineer with nearly 4 years of experience building web and mobile apps with React, Next.js, React Native, Expo, and TypeScript.`,
     },
   },
   experience: {
@@ -71,7 +71,7 @@ export const pagesConfig: PagesConfig = {
       "My professional journey and milestones in software development.",
     metadata: {
       title: "Experience",
-      description: `${siteConfig.authorName}’s experience as a Frontend-focused Software Engineer at TechnoNext Software Ltd — building web and mobile applications using React, Next.js, React Native, Expo, Flutter, and TypeScript.`,
+      description: `${siteConfig.authorName}’s experience as a Frontend-focused Software Engineer at iBox Lab Ltd. (previously TechnoNext Software Ltd) — building web and mobile applications using React, Next.js, React Native, Expo, Flutter, and TypeScript.`,
     },
   },
 };

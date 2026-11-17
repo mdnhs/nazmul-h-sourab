@@ -99,14 +99,20 @@ export default function IndexPage() {
               className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
             >
               {siteConfig.designation} <br />
-              <Link
-                href={siteConfig.companyURL}
-                className="font-normal! text-base"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @{siteConfig.companyName}
-              </Link>
+              {siteConfig.companyURL ? (
+                <Link
+                  href={siteConfig.companyURL}
+                  className="font-normal! text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @{siteConfig.companyName}
+                </Link>
+              ) : (
+                <span className="font-normal text-base">
+                  @{siteConfig.companyName}
+                </span>
+              )}
             </AnimatedText>
             <div className="mt-4 max-w-2xl text-center">
               <p className="leading-normal text-muted-foreground text-sm sm:text-base">

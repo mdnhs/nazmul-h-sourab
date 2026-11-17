@@ -2,8 +2,8 @@ export const siteConfig = {
   name: "Nazmul H. Sourab | Frontend-focused Software Engineer",
   authorName: "Nazmul H. Sourab",
   designation: "Frontend-focused Software Engineer",
-  companyName: "TechnoNext Software Ltd",
-  companyURL: "https://technonext.com",
+  companyName: "iBox Lab Ltd.",
+  companyURL: "",
   username: "mdnhs",
   description:
     "🚀 Frontend-focused Software Engineer | Experienced in React.js, Next.js, React Native, Expo, Flutter, Firebase, TypeScript & Tailwind CSS | Passionate about building performant, scalable, and modern web & mobile applications ✨",

@@ -40,6 +40,8 @@ export type ValidSkills =
   | "Sass"
   | "Firebase"
   | "Push Notifications"
+  | "MCP"
+  | "Claude Code"
   | "Azure"
   | "Google Cloud"
   | "Figma"
