@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Nazmul H. Sourab | Software Engineer",
+  name: "Nazmul H. Sourab | Frontend-focused Software Engineer",
   authorName: "Nazmul H. Sourab",
-  designation: "Software Engineer",
+  designation: "Frontend-focused Software Engineer",
   companyName: "TechnoNext Software Ltd",
   companyURL: "https://technonext.com",
   username: "mdnhs",
