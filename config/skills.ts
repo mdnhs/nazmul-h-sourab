@@ -107,6 +107,20 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.flutter,
   },
   {
+    name: "Firebase",
+    description:
+      "Power apps with authentication, Firestore, cloud messaging, and hosting from Google's backend platform.",
+    rating: 4,
+    icon: Icons.firebase,
+  },
+  {
+    name: "Push Notifications",
+    description:
+      "Engage users with real-time push notifications on web and mobile using FCM and Expo Notifications.",
+    rating: 4,
+    icon: Icons.bell,
+  },
+  {
     name: "Angular",
     description:
       "Build dynamic web apps with a TypeScript-based open-source framework by Google.",

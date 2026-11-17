@@ -35,6 +35,7 @@ export const experiences: ExperienceInterface[] = [
       "Implemented frontend authentication and secure session handling with NextAuth.js v5.",
       "Collaborated in building component-based design systems to ensure UI consistency and scalability.",
       "Built and shipped cross-platform mobile apps using React Native with Expo and Flutter, sharing logic and patterns with the web codebase.",
+      "Integrated Firebase (Auth, Firestore, Cloud Messaging) and implemented push notifications for web and mobile apps.",
       "Mentored junior developers on modern frontend workflows, DevTools debugging, and clean code practices.",
     ],
     skills: [
@@ -50,6 +51,8 @@ export const experiences: ExperienceInterface[] = [
       "React Native",
       "Expo",
       "Flutter",
+      "Firebase",
+      "Push Notifications",
     ],
     companyUrl: "https://technonext.com",
     logo: "/experience/technonext.png",

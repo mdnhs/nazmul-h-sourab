@@ -27,7 +27,7 @@ export const pagesConfig: PagesConfig = {
       "A collection of frontend technologies, frameworks, and tools I work with.",
     metadata: {
       title: "Skills",
-      description: `${siteConfig.authorName}’s professional skill set including React, Next.js, React Native, Expo, Flutter, TypeScript, Tailwind CSS, Redux, and REST API.`,
+      description: `${siteConfig.authorName}’s professional skill set including React, Next.js, React Native, Expo, Flutter, Firebase, Push Notifications, TypeScript, Tailwind CSS, Redux, and REST API.`,
     },
   },
   projects: {

@@ -39,6 +39,7 @@ export type ValidSkills =
   | "Vue.js"
   | "Sass"
   | "Firebase"
+  | "Push Notifications"
   | "Azure"
   | "Google Cloud"
   | "Figma"
