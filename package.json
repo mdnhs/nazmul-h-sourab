@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:cf": "opennextjs-cloudflare build",
+    "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy:cf": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.2.0",
@@ -48,11 +51,13 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.17",
     "@types/nodemailer": "^6.4.9",
     "eslint": "^10.4.0",
     "eslint-config-next": "^16.2.6",
     "prettier": "^3.3.3",
-    "prettier-plugin-organize-imports": "^4.1.0"
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "wrangler": "^4.163.0"
   },
   "overrides": {
     "@types/react": "19.2.15",
