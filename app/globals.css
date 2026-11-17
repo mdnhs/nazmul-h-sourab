@@ -3,6 +3,33 @@
 @config '../tailwind.config.js';
 
 /*
+  Tailwind v4 ignores `theme.container` from the JS config, so the container
+  was left-aligned with no padding. Re-declare it here (center, 1rem padding,
+  1400px max on 2xl) to match the original config.
+*/
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  width: 100%;
+
+  @media (width >= 40rem) {
+    max-width: 40rem;
+  }
+  @media (width >= 48rem) {
+    max-width: 48rem;
+  }
+  @media (width >= 64rem) {
+    max-width: 64rem;
+  }
+  @media (width >= 80rem) {
+    max-width: 80rem;
+  }
+  @media (width >= 96rem) {
+    max-width: 1400px;
+  }
+}
+
+/*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
@@ -274,7 +301,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
