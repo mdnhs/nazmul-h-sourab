@@ -7,6 +7,7 @@ import * as React from "react";
 
 import { Icons } from "@/components/common/icons";
 import { MobileNav } from "@/components/common/mobile-nav";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import localFont from "next/font/local";
@@ -85,18 +86,21 @@ export function MainNav({ items, children }: MainNavProps) {
           ))}
         </nav>
       ) : null}
-      <motion.button
-        className="flex items-center space-x-2 md:hidden"
-        onClick={() => setShowMobileMenu(!showMobileMenu)}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        {showMobileMenu ? <Icons.close /> : <Icons.menu />}
-        <span className="font-bold">Menu</span>
-      </motion.button>
-      {showMobileMenu && items && (
-        <MobileNav items={items}>{children}</MobileNav>
-      )}
+      <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
+        <SheetTrigger asChild>
+          <motion.button
+            className="flex items-center space-x-2 md:hidden"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Icons.menu />
+            <span className="font-bold">Menu</span>
+          </motion.button>
+        </SheetTrigger>
+        <SheetContent className="md:hidden">
+          {items && <MobileNav items={items}>{children}</MobileNav>}
+        </SheetContent>
+      </Sheet>
     </div>
   );
 }
