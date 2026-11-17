@@ -93,6 +93,20 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.react,
   },
   {
+    name: "Expo",
+    description:
+      "Ship React Native apps faster with managed tooling, Expo Router, and EAS build and updates.",
+    rating: 4,
+    icon: Icons.expo,
+  },
+  {
+    name: "Flutter",
+    description:
+      "Build natively compiled, cross-platform mobile apps from a single Dart codebase.",
+    rating: 3,
+    icon: Icons.flutter,
+  },
+  {
     name: "Angular",
     description:
       "Build dynamic web apps with a TypeScript-based open-source framework by Google.",

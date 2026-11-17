@@ -18,7 +18,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: `${siteConfig.authorName} — Frontend Developer specializing in React, Next.js, TypeScript, and Tailwind CSS.`,
+      description: `${siteConfig.authorName} — Software Engineer specializing in React, Next.js, React Native, Expo, Flutter, TypeScript, and Tailwind CSS.`,
     },
   },
   skills: {
@@ -27,7 +27,7 @@ export const pagesConfig: PagesConfig = {
       "A collection of frontend technologies, frameworks, and tools I work with.",
     metadata: {
       title: "Skills",
-      description: `${siteConfig.authorName}’s professional skill set including React, Next.js, TypeScript, Tailwind CSS, Redux, and REST API.`,
+      description: `${siteConfig.authorName}’s professional skill set including React, Next.js, React Native, Expo, Flutter, TypeScript, Tailwind CSS, Redux, and REST API.`,
     },
   },
   projects: {
